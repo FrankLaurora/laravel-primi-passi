@@ -27,9 +27,17 @@ Route::get('/', function () {
             "boolean" => [
                 "name" => "Boolean",
                 "url" => "https://www.boolean.careers"
+            ],
+            "contacts" => [
+                "name" => "Contatti (pagina di prova)",
+                "url" => "/contacts"
             ]
         ]
     ];
 
     return view('home', $data);
+});
+
+Route::get('/contacts', function () {
+    return view('contacts');
 });
